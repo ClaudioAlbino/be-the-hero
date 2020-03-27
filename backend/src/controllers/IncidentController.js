@@ -24,6 +24,7 @@ module.exports = {
                 'ongs.uf'
             ]);
         
+        //X-Total-Count é um nome aleatório de uma variável dado ao retorno do "count"
         response.header('X-Total-Count', count['count(*)']);
 
         return response.json(incidents);
